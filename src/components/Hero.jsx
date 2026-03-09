@@ -12,8 +12,8 @@ const Hero = () => {
             <div className="container hero-content">
                 <div className="hero-text-side">
                     <h1 className="visually-hidden">Triumph Fight Center</h1>
-                    <img src={superLogo} alt="Triumph Fight Center Logo" className="hero-logo-super default-only" />
-                    <img src={logoUnicoH1} alt="Triumph Fight Center Unico" className="hero-logo-super unico-only" />
+                    <img src={superLogo} alt="Triumph Fight Center Logo" className="hero-logo-super default-only" width="800" height="280" fetchPriority="high" loading="eager" />
+                    <img src={logoUnicoH1} alt="Triumph Fight Center Unico" className="hero-logo-super unico-only" width="600" height="240" fetchPriority="high" loading="eager" />
                     <p className="hero-subtitle">
                         Especialistas en Muay Thai, Boxeo y Kickboxing. <br />
                         <span className="teens-subtitle">También contamos con Kickboxing Teens & Muay Thai Teens.</span>
@@ -45,7 +45,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="hero-image-side">
-                    <img src={fotoGrupal} alt="Entrenamiento intensivo en Triumph Fight Center, academia líder de Muay Thai y Boxeo en Surco" className="hero-img" />
+                    <img src={fotoGrupal} alt="Entrenamiento intensivo en Triumph Fight Center, academia líder de Muay Thai y Boxeo en Surco" className="hero-img" width="500" height="600" fetchPriority="high" loading="eager" />
                 </div>
             </div>
         </section>

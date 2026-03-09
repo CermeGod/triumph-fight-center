@@ -79,6 +79,7 @@ const Eventos = () => {
                             alt="O.Medrano VS J.Muñante"
                             className="event-img cursor-zoom"
                             loading="lazy"
+                            width="500" height="700"
                             onClick={() => openModal(imgEstelar)}
                         />
                         <div className="event-desc text-center">
@@ -98,6 +99,7 @@ const Eventos = () => {
                             alt="Separada Entrada"
                             className="event-img cursor-zoom"
                             loading="lazy"
+                            width="500" height="700"
                             onClick={() => openModal(armaskargasImg)}
                         />
                         <div className="event-desc text-center">
@@ -116,6 +118,7 @@ const Eventos = () => {
                             alt="Plantilla Evento"
                             className="event-img cursor-zoom"
                             loading="lazy"
+                            width="500" height="700"
                             onClick={() => openModal(liviameyagusukiImg)}
                         />
                         <div className="event-desc text-center">
@@ -147,6 +150,7 @@ const Eventos = () => {
                             alt="Cafetería"
                             className="event-img cursor-zoom"
                             loading="lazy"
+                            width="600" height="400"
                             onClick={() => openModal(cafeImg)}
                         />
                         <div className="event-desc">
@@ -161,6 +165,7 @@ const Eventos = () => {
                             alt="Noche UFC"
                             className="event-img cursor-zoom"
                             loading="lazy"
+                            width="600" height="400"
                             onClick={() => openModal(pelisImg)}
                         />
                         <div className="event-desc">

@@ -13,11 +13,13 @@ const Profesor = () => {
                             src={joelImg1}
                             alt="Profesor Principal Triumph Fight Center"
                             className="profesor-img base-img"
+                            width="400" height="500" loading="lazy"
                         />
                         <img
                             src={joelImg2}
                             alt="Profesor Principal Triumph Fight Center Accion"
                             className="profesor-img crossfade-img"
+                            width="400" height="500" loading="lazy"
                         />
                     </div>
                     <div className="profesor-text-side">

@@ -21,7 +21,7 @@ const Gloria = () => {
                 <div className="champions-list" style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
                     <article className="hall-of-fame">
                         <div className="hof-image-side">
-                            <img src={cameponPalominoImg} alt="Campeón Leonardo Palomino entrenando en Triumph Fight Center Surco" className="champion-img" />
+                            <img src={cameponPalominoImg} alt="Campeón Leonardo Palomino entrenando en Triumph Fight Center Surco" className="champion-img" width="500" height="600" loading="lazy" />
                         </div>
                         <div className="hof-content">
                             <div className="champion-badge">
@@ -45,9 +45,9 @@ const Gloria = () => {
 
                     <article className="hall-of-fame">
                         <div className="hof-image-side has-crossfade-3">
-                            <img src={katerineImg1} alt="Katerine Vargas Campeona" className="champion-img cf-img cf-img-1" />
-                            <img src={katerineImg2} alt="Katerine Vargas Accion" className="champion-img cf-img cf-img-2" />
-                            <img src={katerineImg3} alt="Katerine Vargas Tercera" className="champion-img cf-img cf-img-3" />
+                            <img src={katerineImg1} alt="Katerine Vargas Campeona" className="champion-img cf-img cf-img-1" width="500" height="600" loading="lazy" />
+                            <img src={katerineImg2} alt="Katerine Vargas Accion" className="champion-img cf-img cf-img-2" width="500" height="600" loading="lazy" />
+                            <img src={katerineImg3} alt="Katerine Vargas Tercera" className="champion-img cf-img cf-img-3" width="500" height="600" loading="lazy" />
                         </div>
                         <div className="hof-content">
                             <div className="champion-badge">
