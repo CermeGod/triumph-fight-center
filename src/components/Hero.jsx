@@ -13,7 +13,7 @@ const Hero = () => {
                 <div className="hero-text-side">
                     <h1 className="visually-hidden">Triumph Fight Center</h1>
                     <img src={superLogo} alt="Triumph Fight Center Logo" className="hero-logo-super default-only" width="800" height="280" fetchPriority="high" loading="eager" />
-                    <img src={logoUnicoH1} alt="Triumph Fight Center Unico" className="hero-logo-super unico-only" width="600" height="240" fetchPriority="high" loading="eager" />
+                    <img src={logoUnicoH1} alt="Triumph Fight Center Unico" className="hero-logo-super unico-only" width="600" height="240" loading="lazy" />
                     <p className="hero-subtitle">
                         Especialistas en Muay Thai, Boxeo y Kickboxing. <br />
                         <span className="teens-subtitle">También contamos con Kickboxing Teens & Muay Thai Teens.</span>

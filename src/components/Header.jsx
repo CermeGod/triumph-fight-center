@@ -35,7 +35,7 @@ const Header = () => {
                 {/* 1. Izquierda: Logo */}
                 <a href="/" className="logo-placeholder">
                     <img src={logo} alt="Triumph Fight Center Logo" className="logo-img default-only" width="200" height="70" loading="eager" fetchPriority="high" />
-                    <img src={logoUnico} alt="Triumph Unico Logo" className="logo-img unico-only" width="150" height="60" loading="eager" fetchPriority="high" />
+                    <img src={logoUnico} alt="Triumph Unico Logo" className="logo-img unico-only" width="150" height="60" loading="lazy" />
                 </a>
 
                 <nav className="nav">
