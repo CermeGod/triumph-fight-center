@@ -31,13 +31,13 @@ const Hero = () => {
                     </div>
 
                     <div className="hero-socials" style={{ display: 'flex', alignItems: 'center', gap: '20px', marginTop: '30px' }}>
-                        <a href="https://www.instagram.com/triumphfightcenter.peru/?hl=es" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', display: 'flex' }}>
+                        <a href="https://www.instagram.com/triumphfightcenter.peru/?hl=es" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', display: 'flex' }} aria-label="Instagram Triumph Fight Center">
                             <Instagram size={28} />
                         </a>
-                        <a href="https://www.facebook.com/p/Triumph-Fight-Center-61556514788548/" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', display: 'flex' }}>
+                        <a href="https://www.facebook.com/p/Triumph-Fight-Center-61556514788548/" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', display: 'flex' }} aria-label="Facebook Triumph Fight Center">
                             <Facebook size={28} />
                         </a>
-                        <a href="https://www.tiktok.com/@triumphfightcenter.peru" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', display: 'flex' }}>
+                        <a href="https://www.tiktok.com/@triumphfightcenter.peru" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', display: 'flex' }} aria-label="TikTok Triumph Fight Center">
                             <svg viewBox="0 0 448 512" width="20" height="22" fill="currentColor" style={{ overflow: 'visible' }}>
                                 <path d="M448 209.91a210.06 210.06 0 01-122.77-39.25v178.72A162.55 162.55 0 11162.55 78.52v79.14a83.38 83.38 0 1083.39 83.39V0h79.15a163.51 163.51 0 00122.91 163.76z" />
                             </svg>

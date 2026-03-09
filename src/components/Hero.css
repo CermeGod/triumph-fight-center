@@ -47,7 +47,8 @@
     gap: 8px;
     background-color: rgba(30, 140, 203, 0.1);
     border: 1px solid rgba(30, 140, 203, 0.3);
-    color: var(--primary);
+    color: #63b3ed;
+    /* Improved contrast */
     padding: 8px 18px;
     border-radius: 30px;
     font-family: var(--font-heading);

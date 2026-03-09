@@ -33,7 +33,7 @@ const Profesor = () => {
                             "Transmitiendo conocimiento con pasión, integridad y un nivel técnico impecable para forjar la mente de cada guerrero."
                         </p>
                         <div className="profesor-socials" style={{ display: 'flex', gap: '20px', marginTop: '20px', paddingLeft: '15px' }}>
-                            <a href="#" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)' }}>
+                            <a href="#" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)' }} aria-label="Instagram de Joel">
                                 <Instagram size={24} />
                             </a>
                         </div>
