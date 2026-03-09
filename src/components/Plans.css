@@ -1,0 +1,252 @@
+.plans-section {
+    padding: 100px 0;
+    background-color: var(--bg-color);
+    /* Updated to support themes */
+    position: relative;
+}
+
+.plans-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.plans-header h2 {
+    font-size: var(--h2);
+    color: var(--primary);
+    /* Cambiado a primario para resaltar "PROMOCIONES" */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.plans-header p {
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.plans-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    /* Make them same height natively */
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.plan-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 360px;
+    /* Un poco más anchas para que entren todos los textos largos */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, border-color 0.3s;
+    position: relative;
+    box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.plan-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+.plan-header {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.plan-header h3 {
+    font-size: 26px;
+    color: var(--primary);
+    /* Azul como en el PDF */
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.regular-price {
+    color: #ff4757;
+    /* Rojo para precio "tachado" o regular */
+    font-size: 14px;
+    text-decoration: line-through;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+.plan-price {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--text-main);
+    line-height: 1;
+}
+
+/* Specific to Premium plan text */
+.premium-warning {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ff4757;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px;
+    background: rgba(255, 71, 87, 0.1);
+    border-radius: 8px;
+}
+
+.plan-features {
+    list-style: none;
+    flex: 1;
+    /* Pushes button down */
+}
+
+.plan-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.check-icon {
+    color: #1e8ccb;
+    /* Azul de triunfo */
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.plan-btn {
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* === PRO PLAN HIGHLIGHT === */
+.plan-pro {
+    background: linear-gradient(180deg, rgba(30, 140, 203, 0.08) 0%, var(--card-bg) 100%);
+    border-color: var(--primary);
+    transform: scale(1.03);
+}
+
+.plan-pro:hover {
+    transform: scale(1.03) translateY(-5px);
+}
+
+.pro-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary);
+    color: #fff;
+    padding: 5px 25px;
+    border-radius: 20px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* === CLASES PERSONALIZADAS === */
+.personalized-banner {
+    margin-top: 60px;
+    background: linear-gradient(135deg, var(--card-bg) 0%, rgba(30, 140, 203, 0.1) 100%);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.personalized-content h3 {
+    font-size: 32px;
+    color: var(--primary);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.personalized-content p {
+    color: var(--text-main);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.personalized-options {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.option-box {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    padding: 15px 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 180px;
+}
+
+.pz-price {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--text-main);
+}
+
+.pz-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .plan-pro {
+        transform: scale(1);
+        order: -1;
+    }
+
+    .plan-pro:hover {
+        transform: translateY(-5px);
+    }
+}
+
+@media (max-width: 768px) {
+    .personalized-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .personalized-options {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .option-box {
+        width: 100%;
+    }
+}

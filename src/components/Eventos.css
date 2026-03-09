@@ -1,0 +1,161 @@
+.events-section {
+    padding: 100px 0;
+    background-color: var(--bg-color);
+    /* Matches theme */
+}
+
+/* Evento Principal Area */
+.main-event {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.main-event-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    /* Grande e imponente */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px var(--shadow-color);
+}
+
+.main-event-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+}
+
+.main-event-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 80px 40px 40px 40px;
+    background: linear-gradient(to top, var(--bg-color), transparent);
+    color: var(--white);
+    /* Este texto sí debe ser siempre blanco sobre la imagen negra */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.live-badge {
+    background-color: #ff3333;
+    /* Rojo alerta/en vivo */
+    color: #fff;
+    font-weight: 800;
+    padding: 6px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: var(--font-heading);
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.main-event-overlay h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    /* Override theme var just for this overlay */
+}
+
+.event-date {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--border-color);
+    /* Soft color */
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+/* Subtitle for the carousel mapping to "Cartelera Preliminar" */
+.section-subtitle {
+    font-size: 32px;
+    color: var(--text-main);
+    margin-bottom: 30px;
+    border-left: 5px solid var(--primary);
+    padding-left: 15px;
+}
+
+/* Carrusel de CSS simulado (Scroll Horizontal) */
+.events-carousel {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding-bottom: 30px;
+    /* Fancy custom scrollbar for horizontal viewing */
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) var(--bg-secondary);
+}
+
+.events-carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.events-carousel::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+    border-radius: 10px;
+}
+
+.events-carousel::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+/* Tarjetas individuales de peleadores */
+.event-card {
+    min-width: 320px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary);
+}
+
+.event-card-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.event-card-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.event-card-info h4 {
+    font-size: 22px;
+    color: var(--text-main);
+    margin-bottom: 5px;
+}
+
+.event-card-info span {
+    display: block;
+    color: var(--text-muted);
+    font-family: var(--font-body);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.event-card-footer {
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+}
+
+.event-card-footer span {
+    margin: 0;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}

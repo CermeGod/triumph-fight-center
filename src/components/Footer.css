@@ -1,0 +1,126 @@
+.footer {
+    background-color: var(--bg-color);
+    /* Updated for Theme */
+    padding: 80px 0 0px 0;
+    border-top: 1px solid var(--border-color);
+    /* Separador suave del contenido arriba */
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-bottom: 50px;
+}
+
+.footer-info {
+    max-width: 400px;
+}
+
+.footer-logo {
+    color: var(--text-main);
+    /* Adaptable color */
+    font-size: 30px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.footer-desc {
+    font-size: 16px;
+    color: var(--text-muted);
+    /* Adaptable color */
+    line-height: 1.6;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-item address,
+.contact-item p {
+    font-size: 16px;
+    font-style: normal;
+    color: var(--text-muted);
+    /* Adaptable */
+}
+
+.icon {
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.footer-social p {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: var(--font-heading);
+    letter-spacing: 1px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    padding: 12px;
+    background: var(--card-bg);
+    /* Adaptable */
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    /* Iconos en círculo se ven más premium */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-main);
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+    /* Always white on hover primary */
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(30, 140, 203, 0.3);
+}
+
+.footer-bottom {
+    padding: 25px 0;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    background-color: var(--bg-secondary);
+    /* Adaptable */
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-info,
+    .footer-contact {
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .contact-item {
+        justify-content: center;
+    }
+}
