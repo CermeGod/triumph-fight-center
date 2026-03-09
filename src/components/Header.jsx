@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Settings, Moon, Sun, Monitor, EyeOff } from 'lucide-react';
 import logo from '../assets/Superlogo.png';
 import logoUnico from '../assets/Logo-Unico-header-footer-favicon.webp';
+import faviconImg from '../assets/favicon.png';
 
 const Header = () => {
     const [settingsOpen, setSettingsOpen] = useState(false);
@@ -16,15 +17,15 @@ const Header = () => {
 
         if (theme === 'light') {
             document.body.classList.add('light-mode');
-            if (favicon) favicon.href = "/vite.svg";
+            if (favicon) favicon.href = faviconImg;
         } else if (theme === 'dim') {
             document.body.classList.add('dim-mode');
-            if (favicon) favicon.href = "/vite.svg";
+            if (favicon) favicon.href = faviconImg;
         } else if (theme === 'unico') {
             document.body.classList.add('unico-mode');
             if (favicon) favicon.href = logoUnico;
         } else {
-            if (favicon) favicon.href = "/vite.svg";
+            if (favicon) favicon.href = faviconImg;
         }
     }, [theme]);
 
