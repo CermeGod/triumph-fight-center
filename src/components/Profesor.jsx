@@ -1,7 +1,7 @@
 import './Profesor.css';
 import { Instagram, Facebook } from 'lucide-react';
-import joelImg1 from '../assets/profesor-joel-imagen1.jpg';
-import joelImg2 from '../assets/Profeso-Joel-imagen2.png';
+import joelImg1 from '../assets/profesor-joel-imagen1.webp';
+import joelImg2 from '../assets/Profeso-Joel-imagen2.webp';
 
 const Profesor = () => {
     return (

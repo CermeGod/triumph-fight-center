@@ -1,10 +1,10 @@
 import './Hero.css';
 import { MapPin } from 'lucide-react';
-import heroImage from '../assets/imagen-principal-hero.jpeg'; // Updated image
-import superLogo from '../assets/Superlogo.png';
-import logoUnicoH1 from '../assets/logo-unico-h1.png';
+import heroImage from '../assets/imagen-principal-hero.webp'; // Updated image
+import superLogo from '../assets/Superlogo.webp';
+import logoUnicoH1 from '../assets/logo-unico-h1.webp';
 import { Instagram, Facebook } from 'lucide-react'; // Added import
-import fotoGrupal from '../assets/foto-grupal-3.jpeg';
+import fotoGrupal from '../assets/foto-grupal-3.webp';
 
 const Hero = () => {
     return (

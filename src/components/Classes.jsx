@@ -1,9 +1,9 @@
 import './Classes.css';
-import capoImage from '../assets/capoeria-kid-servicio-carruse.jpeg';
-import teenImage from '../assets/kickboxing-teen-servicio-carrusel.jpeg';
-import tkdImage from '../assets/taekwondo.jpg';
-import muayThaiImg from '../assets/Muay thai .png';
-import boxeoImg from '../assets/guantes-tirumph.boxeo.png';
+import capoImage from '../assets/capoeria-kid-servicio-carruse.webp';
+import teenImage from '../assets/kickboxing-teen-servicio-carrusel.webp';
+import tkdImage from '../assets/taekwondo.webp';
+import muayThaiImg from '../assets/Muay thai .webp';
+import boxeoImg from '../assets/guantes-tirumph.boxeo.webp';
 import { useState, useRef } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 

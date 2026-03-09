@@ -1,9 +1,9 @@
 import './Header.css';
 import { useState, useEffect } from 'react';
 import { Settings, Moon, Sun, Monitor, EyeOff } from 'lucide-react';
-import logo from '../assets/Superlogo.png';
+import logo from '../assets/Superlogo.webp';
 import logoUnico from '../assets/Logo-Unico-header-footer-favicon.webp';
-import faviconImg from '../assets/favicon.png';
+import faviconImg from '../assets/favicon.webp';
 
 const Header = () => {
     const [settingsOpen, setSettingsOpen] = useState(false);

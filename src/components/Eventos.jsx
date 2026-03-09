@@ -1,12 +1,12 @@
 import './Eventos.css';
 import { useState, useRef } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import imgEstelar from '../assets/evento-pelea-estelar.jpeg';
-import imgEntrada from '../assets/evento-separada-entrada-peru.jpeg';
-import armaskargasImg from '../assets/pelea-evento-A.Armas vs K.Vargas.jpg';
-import liviameyagusukiImg from '../assets/Pelea-E.LIVIA VS H.MIUAGSUKI.png';
-import cafeImg from '../assets/invitacion a los estudiantes a cafe - colaboracion.jpeg';
-import pelisImg from '../assets/noche de pelis.jpg';
+import imgEstelar from '../assets/evento-pelea-estelar.webp';
+import imgEntrada from '../assets/evento-separada-entrada-peru.webp';
+import armaskargasImg from '../assets/pelea-evento-A.Armas vs K.Vargas.webp';
+import liviameyagusukiImg from '../assets/Pelea-E.LIVIA VS H.MIUAGSUKI.webp';
+import cafeImg from '../assets/invitacion a los estudiantes a cafe - colaboracion.webp';
+import pelisImg from '../assets/noche de pelis.webp';
 
 const Eventos = () => {
     const [modalImage, setModalImage] = useState(null);

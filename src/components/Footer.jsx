@@ -1,6 +1,6 @@
 import './Footer.css';
 import { Instagram, Facebook, Share2, MapPin, Phone } from 'lucide-react';
-import logo from '../assets/Superlogo.png';
+import logo from '../assets/Superlogo.webp';
 import logoUnico from '../assets/Logo-Unico-header-footer-favicon.webp';
 const Footer = () => {
     return (

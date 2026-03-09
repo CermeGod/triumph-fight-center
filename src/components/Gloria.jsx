@@ -1,10 +1,10 @@
 import './Gloria.css';
 import { Medal, Trophy, Star, Crown, ChevronRight } from 'lucide-react';
-import leonardoImg from '../assets/Campeon.Leonardo Palomino.jpeg';
-import cameponPalominoImg from '../assets/CAMEPON PALOMINO.png';
-import katerineImg1 from '../assets/campeona-sudamericanda.jpg';
-import katerineImg2 from '../assets/campeona-2do-lugar-brasil-foto2.jpeg';
-import katerineImg3 from '../assets/campeona-2dolugar-brasil.jpeg';
+import leonardoImg from '../assets/Campeon.Leonardo Palomino.webp';
+import cameponPalominoImg from '../assets/CAMEPON PALOMINO.webp';
+import katerineImg1 from '../assets/campeona-sudamericanda.webp';
+import katerineImg2 from '../assets/campeona-2do-lugar-brasil-foto2.webp';
+import katerineImg3 from '../assets/campeona-2dolugar-brasil.webp';
 
 const Gloria = () => {
     return (
