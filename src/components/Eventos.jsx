@@ -73,6 +73,7 @@ const Eventos = () => {
                             src={imgEstelar}
                             alt="O.Medrano VS J.Muñante"
                             className="event-img cursor-zoom"
+                            loading="lazy"
                             onClick={() => openModal(imgEstelar)}
                         />
                         <div className="event-desc text-center">
@@ -91,6 +92,7 @@ const Eventos = () => {
                             src="src/assets/pelea-evento-A.Armas vs K.Vargas.jpg"
                             alt="Separada Entrada"
                             className="event-img cursor-zoom"
+                            loading="lazy"
                             onClick={() => openModal("src/assets/pelea-evento-A.Armas vs K.Vargas.jpg")}
                         />
                         <div className="event-desc text-center">
@@ -108,6 +110,7 @@ const Eventos = () => {
                             src="src/assets/Pelea-E.LIVIA VS H.MIUAGSUKI.png"
                             alt="Plantilla Evento"
                             className="event-img cursor-zoom"
+                            loading="lazy"
                             onClick={() => openModal("src/assets/Pelea-E.LIVIA VS H.MIUAGSUKI.png")}
                         />
                         <div className="event-desc text-center">
@@ -138,6 +141,7 @@ const Eventos = () => {
                             src="src/assets/invitacion a los estudiantes a cafe - colaboracion.jpeg"
                             alt="Cafetería"
                             className="event-img cursor-zoom"
+                            loading="lazy"
                             onClick={() => openModal("src/assets/invitacion a los estudiantes a cafe - colaboracion.jpeg")}
                         />
                         <div className="event-desc">
@@ -151,6 +155,7 @@ const Eventos = () => {
                             src="src/assets/noche de pelis.jpg"
                             alt="Noche UFC"
                             className="event-img cursor-zoom"
+                            loading="lazy"
                             onClick={() => openModal("src/assets/noche de pelis.jpg")}
                         />
                         <div className="event-desc">

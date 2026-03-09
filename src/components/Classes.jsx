@@ -44,7 +44,7 @@ const Classes = () => {
                     <article className="class-card">
                         <div className="class-img-wrapper">
                             {/* Placeholder Image using Unsplash */}
-                            <img src="src\assets\Muay thai .png" alt="Clase de Muay Thai en Triumph Fight Center Surco" />
+                            <img src="src\assets\Muay thai .png" alt="Clase de Muay Thai en Triumph Fight Center Surco" loading="lazy" />
                         </div>
                         <div className="class-info">
                             <h3>Muay Thai</h3>
@@ -56,7 +56,7 @@ const Classes = () => {
                     <article className="class-card">
                         <div className="class-img-wrapper">
                             {/* Placeholder Image using Unsplash */}
-                            <img src="src\assets\guantes-tirumph.boxeo.png" alt="Entrenamiento de Boxeo Clásico para adultos en Lima" />
+                            <img src="src\assets\guantes-tirumph.boxeo.png" alt="Entrenamiento de Boxeo Clásico para adultos en Lima" loading="lazy" />
                         </div>
                         <div className="class-info">
                             <h3>Boxeo Clásico</h3>
@@ -67,7 +67,7 @@ const Classes = () => {
 
                     <article className="class-card">
                         <div className="class-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800" alt="Sesión de Kickboxing funcional en Triumph Fight Center" />
+                            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800" alt="Sesión de Kickboxing funcional en Triumph Fight Center" loading="lazy" />
                         </div>
                         <div className="class-info">
                             <h3>Kickboxing</h3>
@@ -90,7 +90,7 @@ const Classes = () => {
                 <div className="classes-grid kids-grid" ref={kidsGridRef}>
                     <article className="class-card">
                         <div className="class-img-wrapper cursor-zoom" onClick={() => openModal(teenImage)}>
-                            <img src={teenImage} alt="Kickboxing Teens" />
+                            <img src={teenImage} alt="Kickboxing Teens" loading="lazy" />
                         </div>
                         <div className="class-info">
                             <h3>Kickboxing Teens</h3>
@@ -101,7 +101,7 @@ const Classes = () => {
 
                     <article className="class-card">
                         <div className="class-img-wrapper cursor-zoom" onClick={() => openModal(capoImage)}>
-                            <img src={capoImage} alt="Capoeira Kids" />
+                            <img src={capoImage} alt="Capoeira Kids" loading="lazy" />
                         </div>
                         <div className="class-info">
                             <h3>Capoeira Kids</h3>
@@ -112,7 +112,7 @@ const Classes = () => {
 
                     <article className="class-card">
                         <div className="class-img-wrapper cursor-zoom" onClick={() => openModal(tkdImage)}>
-                            <img src={tkdImage} alt="Taekwondo" />
+                            <img src={tkdImage} alt="Taekwondo" loading="lazy" />
                         </div>
                         <div className="class-info">
                             <h3>Taekwondo</h3>
