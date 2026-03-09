@@ -32,25 +32,26 @@
 
 .class-card {
     background-color: var(--card-bg);
-    /* Theme compatible card */
     border: 1px solid var(--border-color);
     border-radius: 20px;
     overflow: hidden;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    transition: all 0.2s ease;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    /* UI/UX Tip: Clickable targets */
 }
 
 .class-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
+    /* Subtler transform */
     border-color: var(--primary);
     box-shadow: 0 15px 30px var(--shadow-color);
-    /* Theme compatible shadow */
 }
 
 .class-img-wrapper {
     width: 100%;
-    height: 250px;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -59,6 +60,33 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
+}
+
+.class-img-wrapper.has-crossfade {
+    position: relative;
+}
+
+.class-img-wrapper.has-crossfade img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.class-img-wrapper.has-crossfade .crossfade-img {
+    animation: crossFade 6s ease-in-out infinite alternate;
+}
+
+@keyframes crossFade {
+
+    0%,
+    30% {
+        opacity: 1;
+    }
+
+    70%,
+    100% {
+        opacity: 0;
+    }
 }
 
 .class-card:hover .class-img-wrapper img {
@@ -87,7 +115,7 @@
 }
 
 .class-link {
-    color: var(--primary);
+    color: var(--accent);
     font-weight: 600;
     font-size: 16px;
     font-family: var(--font-heading);
@@ -99,8 +127,104 @@
     text-decoration: underline;
 }
 
+.eventual-header {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.kids-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.kids-grid .class-card {
+    max-width: 450px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.cursor-zoom {
+    cursor: zoom-in;
+}
+
+.image-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.lightbox-content img {
+    max-width: 100%;
+    max-height: 90vh;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+    animation: fadeInZoom 0.3s ease;
+}
+
+@keyframes fadeInZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.close-lightbox {
+    position: absolute;
+    top: -40px;
+    right: 0px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.close-lightbox:hover {
+    color: var(--accent);
+}
+
 @media (max-width: 768px) {
     .section-header h2 {
         font-size: 35px;
+    }
+
+    .kids-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+        padding-bottom: 20px;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+        margin-top: 10px;
+    }
+
+    .kids-grid .class-card {
+        scroll-snap-align: center;
+        flex: 0 0 90%;
+        max-width: 90%;
     }
 }

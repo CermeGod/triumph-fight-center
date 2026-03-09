@@ -46,9 +46,11 @@
     /* Un poco más anchas para que entren todos los textos largos */
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease, border-color 0.3s;
+    transition: all 0.2s ease;
+    /* Professional timing */
     position: relative;
     box-shadow: 0 10px 30px var(--shadow-color);
+    cursor: pointer;
 }
 
 .plan-card:hover {
@@ -164,9 +166,9 @@
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    z-index: 10;
 }
 
-/* === CLASES PERSONALIZADAS === */
 .personalized-banner {
     margin-top: 60px;
     background: linear-gradient(135deg, var(--card-bg) 0%, rgba(30, 140, 203, 0.1) 100%);
@@ -178,6 +180,37 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.personalized-banner:hover {
+    box-shadow: 0 15px 40px var(--shadow-color);
+    transform: translateY(-3px);
+}
+
+.personalized-banner::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0) 100%);
+    transform: rotate(30deg) translateX(-100%);
+    animation: shineEffect 6s infinite;
+}
+
+@keyframes shineEffect {
+    0% {
+        transform: rotate(30deg) translateX(-100%);
+    }
+
+    20%,
+    100% {
+        transform: rotate(30deg) translateX(100%);
+    }
 }
 
 .personalized-content h3 {
@@ -203,11 +236,19 @@
     background: var(--bg-color);
     border: 1px solid var(--border-color);
     padding: 15px 25px;
-    border-radius: 12px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-width: 180px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.option-box:hover {
+    transform: scale(1.05);
+    border-color: var(--primary);
+    box-shadow: 0 10px 20px rgba(30, 140, 203, 0.2);
 }
 
 .pz-price {
@@ -235,6 +276,25 @@
 }
 
 @media (max-width: 768px) {
+    .plans-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+        padding-bottom: 20px;
+        padding-top: 25px;
+        margin-top: -15px;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .plan-card {
+        scroll-snap-align: center;
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+
     .personalized-banner {
         flex-direction: column;
         text-align: center;

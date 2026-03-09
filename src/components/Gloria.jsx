@@ -1,5 +1,6 @@
 import './Gloria.css';
-import { Medal, Trophy, Star, Crown } from 'lucide-react';
+import { Medal, Trophy, Star, Crown, ChevronRight } from 'lucide-react';
+import leonardoImg from '../assets/Campeon.Leonardo Palomino.jpeg';
 
 const Gloria = () => {
     return (
@@ -7,57 +8,62 @@ const Gloria = () => {
             <div className="container">
                 <div className="trophy-header text-center">
                     <span className="section-badge">Nuestra Gloria</span>
-                    <h2>Sala de Trofeos</h2>
+                    <h2>Sala de Campeones</h2>
                     <p className="trophy-subtitle">
                         El tatami donde se forjan campeones. Conoce nuestros logros y la sangre derramada por obtener la victoria en el circuito nacional.
                     </p>
                 </div>
 
-                <div className="trophy-grid">
-                    {/* Trofeo 1 */}
-                    <article className="trophy-case">
-                        <div className="trophy-icon-wrapper gold">
-                            <Trophy size={48} />
+                <div className="champions-list" style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
+                    <article className="hall-of-fame">
+                        <div className="hof-image-side">
+                            <img src="src/assets/CAMEPON PALOMINO.png" alt="Campeón Leonardo Palomino entrenando en Triumph Fight Center Surco" className="champion-img" />
                         </div>
-                        <div className="trophy-info">
-                            <h3>Campeones Nacionales</h3>
-                            <span className="trophy-year">2023 - 2024</span>
-                            <p>Múltiples medallas de Oro en el torneo oficial de la federación peruana de Muay Thai.</p>
+                        <div className="hof-content">
+                            <div className="champion-badge">
+                                <Star size={16} /> CAMPEÓN 63,500 KICKBOXING - K1
+                            </div>
+                            <h3>Leonardo Palomino</h3>
+                            <ul className="profesor-skills" style={{ marginBottom: "20px" }}>
+                                <li><strong>Especialización:</strong> Muay Thai / Kickboxing</li>
+                                <li><strong>Exp:</strong> 6 años</li>
+                                <li><strong>Movimiento Estrella:</strong> High Kick</li>
+                                <li><strong>Personalidad:</strong> Silencioso pero letal, siempre sonriendo.</li>
+                            </ul>
+                            <p className="quote gloria-quote">
+                                "El dolor es temporal, el orgullo es para siempre."
+                            </p>
+                            <a href="https://wa.me/51900966701" target="_blank" rel="noopener noreferrer" className="champion-link">
+                                Sé como Leonardo <ChevronRight size={16} />
+                            </a>
                         </div>
                     </article>
 
-                    {/* Trofeo 2 */}
-                    <article className="trophy-case">
-                        <div className="trophy-icon-wrapper silver">
-                            <Medal size={48} />
+                    <article className="hall-of-fame">
+                        <div className="hof-image-side has-crossfade-3">
+                            <img src="src/assets/campeona-sudamericanda.jpg" alt="Katerine Vargas Campeona" className="champion-img cf-img cf-img-1" />
+                            <img src="src/assets/campeona-2do-lugar-brasil-foto2.jpeg" alt="Katerine Vargas Accion" className="champion-img cf-img cf-img-2" />
+                            <img src="src/assets/campeona-2dolugar-brasil.jpeg" alt="Katerine Vargas Tercera" className="champion-img cf-img cf-img-3" />
                         </div>
-                        <div className="trophy-info">
-                            <h3>Liga de Boxeo Amateur</h3>
-                            <span className="trophy-year">2023</span>
-                            <p>Nuestros prospectos arrasaron en la división de pesos ligeros y welter llevándose la medalla de plata.</p>
+                        <div className="hof-content">
+                            <div className="champion-badge">
+                                <Star size={16} /> Sub-Campeona Sudamericana KickBoxing (Brasil 2025)
+                            </div>
+                            <h3>Katerine Vargas</h3>
+                            <ul className="profesor-skills" style={{ marginBottom: "20px" }}>
+                                <li><strong>Especialización:</strong> Muay Thai / Kickboxing</li>
+                                <li><strong>Exp:</strong> 25 años</li>
+                                <li><strong>Movimiento Estrella:</strong> Low kick</li>
+                                <li><strong>Personalidad:</strong> Tranquila en los entrenamientos pero agresividiad al 100% en el ring, no deja aperturas.</li>
+                            </ul>
+                            <p className="quote gloria-quote">
+                                "La mejor defensa es el ataque."
+                            </p>
+                            <a href="https://wa.me/51900966701" target="_blank" rel="noopener noreferrer" className="champion-link">
+                                Sé como Katerine <ChevronRight size={16} />
+                            </a>
                         </div>
                     </article>
-
-                    {/* Trofeo 3 */}
-                    <article className="trophy-case highlight-case">
-                        <div className="trophy-icon-wrapper platinum">
-                            <Crown size={48} />
-                        </div>
-                        <div className="trophy-info">
-                            <h3>Mejor Academia Lima Sur</h3>
-                            <span className="trophy-year">Actualidad</span>
-                            <p>Reconocimiento al mayor nivel de competitividad, disciplina y calidad de instalaciones para deportes de contacto.</p>
-                        </div>
-                    </article>
-                </div>
-
-                <div className="hall-of-fame">
-                    <div className="hof-content">
-                        <Star size={32} className="hof-star" />
-                        <h3>Salón de la Fama</h3>
-                        <p>Únete hoy. Quizás mañana, tu foto esté colgando en nuestra pared de campeones.</p>
-                        <a href="#unete" className="btn-outline hof-btn">Entrena con nosotros</a>
-                    </div>
                 </div>
             </div>
         </section>

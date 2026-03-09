@@ -1,7 +1,7 @@
 .footer {
     background-color: var(--bg-color);
     /* Updated for Theme */
-    padding: 80px 0 0px 0;
+    padding: 15px 0 0px 0;
     border-top: 1px solid var(--border-color);
     /* Separador suave del contenido arriba */
 }
@@ -18,12 +18,11 @@
     max-width: 400px;
 }
 
-.footer-logo {
-    color: var(--text-main);
-    /* Adaptable color */
-    font-size: 30px;
+.footer-logo-img {
+    height: 140px;
+    max-width: 100%;
+    object-fit: contain;
     margin-bottom: 15px;
-    letter-spacing: 2px;
 }
 
 .footer-desc {
@@ -51,6 +50,13 @@
     font-style: normal;
     color: var(--text-muted);
     /* Adaptable */
+    margin: 0;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
 }
 
 .icon {
@@ -72,15 +78,16 @@
 
 .social-links a {
     padding: 12px;
-    background: var(--card-bg);
-    /* Adaptable */
+    background: transparent;
     border: 1px solid var(--border-color);
     border-radius: 50%;
-    /* Iconos en círculo se ven más premium */
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-main);
+    color: #ffffff;
+    /* Siempre blancos */
+    background-color: var(--primary);
+    /* Fondo llamativo fijo */
     transition: all 0.3s ease;
 }
 

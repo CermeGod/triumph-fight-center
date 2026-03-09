@@ -1,7 +1,30 @@
 import './Plans.css';
-import { CheckCircle2, ShieldAlert } from 'lucide-react';
+import { useRef } from 'react';
+import { CheckCircle2, ShieldAlert, ArrowLeft, ArrowRight } from 'lucide-react';
 
 const Plans = () => {
+    const plansGridRef = useRef(null);
+
+    const scrollGrid = (dir) => {
+        if (!plansGridRef.current) return;
+        const { scrollLeft, scrollWidth, clientWidth } = plansGridRef.current;
+        const scrollAmount = 350;
+
+        if (dir === 'left') {
+            if (scrollLeft <= 0) {
+                plansGridRef.current.scrollTo({ left: scrollWidth, behavior: 'smooth' });
+            } else {
+                plansGridRef.current.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            }
+        } else {
+            if (scrollLeft + clientWidth >= scrollWidth - 10) {
+                plansGridRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                plansGridRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+    };
+
     return (
         <section id="planes" className="plans-section">
             <div className="container">
@@ -10,7 +33,11 @@ const Plans = () => {
                     <p>Sé constante, disciplinado y puntual en tu renovación y goza siempre de los beneficios y precios especiales de TRIUMPH.</p>
                 </div>
 
-                <div className="plans-grid">
+                <div className="carousel-controls mobile-only">
+                    <button onClick={() => scrollGrid('left')} aria-label="Anterior"><ArrowLeft size={32} /></button>
+                    <button onClick={() => scrollGrid('right')} aria-label="Siguiente"><ArrowRight size={32} /></button>
+                </div>
+                <div className="plans-grid" ref={plansGridRef}>
                     {/* Membresía Básica */}
                     <div className="plan-card">
                         <div className="plan-header">
@@ -26,7 +53,7 @@ const Plans = () => {
                             <li><CheckCircle2 size={20} className="check-icon" /> Una sola disciplina</li>
                             <li><CheckCircle2 size={20} className="check-icon" /> Evaluación Fisioterapia (Flexibilidad, movilidad y fuerza)</li>
                         </ul>
-                        <button className="btn-outline plan-btn">Elegir Básica</button>
+                        <a href="https://wa.me/51900966701" target="_blank" rel="noopener noreferrer" className="btn-outline plan-btn">Elegir Básica</a>
                     </div>
 
                     {/* Membresía Estándar */}
@@ -47,7 +74,7 @@ const Plans = () => {
                             <li><CheckCircle2 size={20} className="check-icon" /> Evaluación Fisioterapia</li>
                             <li><CheckCircle2 size={20} className="check-icon" /> Evaluación Nutricional (antropométrica de inicio)</li>
                         </ul>
-                        <button className="btn-primary plan-btn">Elegir Estándar</button>
+                        <a href="https://wa.me/51900966701" target="_blank" rel="noopener noreferrer" className="btn-primary plan-btn">Elegir Estándar</a>
                     </div>
 
                     {/* Membresía Premium */}
@@ -72,7 +99,7 @@ const Plans = () => {
                             <ShieldAlert size={16} />
                             <span>No congelamientos / No es transferible / No hay reembolso</span>
                         </div>
-                        <button className="btn-outline plan-btn">Elegir Premium</button>
+                        <a href="https://wa.me/51900966701" target="_blank" rel="noopener noreferrer" className="btn-outline plan-btn">Elegir Premium</a>
                     </div>
                 </div>
 
