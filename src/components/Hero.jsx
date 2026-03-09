@@ -4,6 +4,7 @@ import heroImage from '../assets/imagen-principal-hero.jpeg'; // Updated image
 import superLogo from '../assets/Superlogo.png';
 import logoUnicoH1 from '../assets/logo-unico-h1.png';
 import { Instagram, Facebook } from 'lucide-react'; // Added import
+import fotoGrupal from '../assets/foto-grupal-3.jpeg';
 
 const Hero = () => {
     return (
@@ -44,7 +45,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="hero-image-side">
-                    <img src="src\assets\foto-grupal-3.jpeg" alt="Entrenamiento intensivo en Triumph Fight Center, academia líder de Muay Thai y Boxeo en Surco" className="hero-img" />
+                    <img src={fotoGrupal} alt="Entrenamiento intensivo en Triumph Fight Center, academia líder de Muay Thai y Boxeo en Surco" className="hero-img" />
                 </div>
             </div>
         </section>

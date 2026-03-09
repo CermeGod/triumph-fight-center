@@ -1,6 +1,10 @@
 import './Gloria.css';
 import { Medal, Trophy, Star, Crown, ChevronRight } from 'lucide-react';
 import leonardoImg from '../assets/Campeon.Leonardo Palomino.jpeg';
+import cameponPalominoImg from '../assets/CAMEPON PALOMINO.png';
+import katerineImg1 from '../assets/campeona-sudamericanda.jpg';
+import katerineImg2 from '../assets/campeona-2do-lugar-brasil-foto2.jpeg';
+import katerineImg3 from '../assets/campeona-2dolugar-brasil.jpeg';
 
 const Gloria = () => {
     return (
@@ -17,7 +21,7 @@ const Gloria = () => {
                 <div className="champions-list" style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
                     <article className="hall-of-fame">
                         <div className="hof-image-side">
-                            <img src="src/assets/CAMEPON PALOMINO.png" alt="Campeón Leonardo Palomino entrenando en Triumph Fight Center Surco" className="champion-img" />
+                            <img src={cameponPalominoImg} alt="Campeón Leonardo Palomino entrenando en Triumph Fight Center Surco" className="champion-img" />
                         </div>
                         <div className="hof-content">
                             <div className="champion-badge">
@@ -41,9 +45,9 @@ const Gloria = () => {
 
                     <article className="hall-of-fame">
                         <div className="hof-image-side has-crossfade-3">
-                            <img src="src/assets/campeona-sudamericanda.jpg" alt="Katerine Vargas Campeona" className="champion-img cf-img cf-img-1" />
-                            <img src="src/assets/campeona-2do-lugar-brasil-foto2.jpeg" alt="Katerine Vargas Accion" className="champion-img cf-img cf-img-2" />
-                            <img src="src/assets/campeona-2dolugar-brasil.jpeg" alt="Katerine Vargas Tercera" className="champion-img cf-img cf-img-3" />
+                            <img src={katerineImg1} alt="Katerine Vargas Campeona" className="champion-img cf-img cf-img-1" />
+                            <img src={katerineImg2} alt="Katerine Vargas Accion" className="champion-img cf-img cf-img-2" />
+                            <img src={katerineImg3} alt="Katerine Vargas Tercera" className="champion-img cf-img cf-img-3" />
                         </div>
                         <div className="hof-content">
                             <div className="champion-badge">

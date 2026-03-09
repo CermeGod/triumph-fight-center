@@ -1,5 +1,7 @@
 import './Profesor.css';
 import { Instagram, Facebook } from 'lucide-react';
+import joelImg1 from '../assets/profesor-joel-imagen1.jpg';
+import joelImg2 from '../assets/Profeso-Joel-imagen2.png';
 
 const Profesor = () => {
     return (
@@ -8,12 +10,12 @@ const Profesor = () => {
                 <div className="profesor-card">
                     <div className="profesor-img-side has-crossfade">
                         <img
-                            src="src/assets/profesor-joel-imagen1.jpg"
+                            src={joelImg1}
                             alt="Profesor Principal Triumph Fight Center"
                             className="profesor-img base-img"
                         />
                         <img
-                            src="src/assets/Profeso-Joel-imagen2.png"
+                            src={joelImg2}
                             alt="Profesor Principal Triumph Fight Center Accion"
                             className="profesor-img crossfade-img"
                         />

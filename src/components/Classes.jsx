@@ -2,6 +2,8 @@ import './Classes.css';
 import capoImage from '../assets/capoeria-kid-servicio-carruse.jpeg';
 import teenImage from '../assets/kickboxing-teen-servicio-carrusel.jpeg';
 import tkdImage from '../assets/taekwondo.jpg';
+import muayThaiImg from '../assets/Muay thai .png';
+import boxeoImg from '../assets/guantes-tirumph.boxeo.png';
 import { useState, useRef } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
@@ -44,7 +46,7 @@ const Classes = () => {
                     <article className="class-card">
                         <div className="class-img-wrapper">
                             {/* Placeholder Image using Unsplash */}
-                            <img src="src\assets\Muay thai .png" alt="Clase de Muay Thai en Triumph Fight Center Surco" loading="lazy" />
+                            <img src={muayThaiImg} alt="Clase de Muay Thai en Triumph Fight Center Surco" loading="lazy" />
                         </div>
                         <div className="class-info">
                             <h3>Muay Thai</h3>
@@ -56,7 +58,7 @@ const Classes = () => {
                     <article className="class-card">
                         <div className="class-img-wrapper">
                             {/* Placeholder Image using Unsplash */}
-                            <img src="src\assets\guantes-tirumph.boxeo.png" alt="Entrenamiento de Boxeo Clásico para adultos en Lima" loading="lazy" />
+                            <img src={boxeoImg} alt="Entrenamiento de Boxeo Clásico para adultos en Lima" loading="lazy" />
                         </div>
                         <div className="class-info">
                             <h3>Boxeo Clásico</h3>

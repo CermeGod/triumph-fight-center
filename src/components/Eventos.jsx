@@ -3,6 +3,11 @@ import { useState, useRef } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import imgEstelar from '../assets/evento-pelea-estelar.jpeg';
 import imgEntrada from '../assets/evento-separada-entrada-peru.jpeg';
+import armaskargasImg from '../assets/pelea-evento-A.Armas vs K.Vargas.jpg';
+import liviameyagusukiImg from '../assets/Pelea-E.LIVIA VS H.MIUAGSUKI.png';
+import cafeImg from '../assets/invitacion a los estudiantes a cafe - colaboracion.jpeg';
+import pelisImg from '../assets/noche de pelis.jpg';
+
 const Eventos = () => {
     const [modalImage, setModalImage] = useState(null);
     const eventsGridRef = useRef(null);
@@ -89,11 +94,11 @@ const Eventos = () => {
 
                     <article className="event-item">
                         <img
-                            src="src/assets/pelea-evento-A.Armas vs K.Vargas.jpg"
+                            src={armaskargasImg}
                             alt="Separada Entrada"
                             className="event-img cursor-zoom"
                             loading="lazy"
-                            onClick={() => openModal("src/assets/pelea-evento-A.Armas vs K.Vargas.jpg")}
+                            onClick={() => openModal(armaskargasImg)}
                         />
                         <div className="event-desc text-center">
                             <h3>A.Armas VS K.Vargas</h3>
@@ -107,11 +112,11 @@ const Eventos = () => {
                     </article>
                     <article className="event-item">
                         <img
-                            src="src/assets/Pelea-E.LIVIA VS H.MIUAGSUKI.png"
+                            src={liviameyagusukiImg}
                             alt="Plantilla Evento"
                             className="event-img cursor-zoom"
                             loading="lazy"
-                            onClick={() => openModal("src/assets/Pelea-E.LIVIA VS H.MIUAGSUKI.png")}
+                            onClick={() => openModal(liviameyagusukiImg)}
                         />
                         <div className="event-desc text-center">
                             <h3>E.Livia VS H.Miyagusuku</h3>
@@ -138,11 +143,11 @@ const Eventos = () => {
                 <div className="events-grid" ref={chillGridRef}>
                     <article className="event-item confort-item">
                         <img
-                            src="src/assets/invitacion a los estudiantes a cafe - colaboracion.jpeg"
+                            src={cafeImg}
                             alt="Cafetería"
                             className="event-img cursor-zoom"
                             loading="lazy"
-                            onClick={() => openModal("src/assets/invitacion a los estudiantes a cafe - colaboracion.jpeg")}
+                            onClick={() => openModal(cafeImg)}
                         />
                         <div className="event-desc">
                             <h3>Invitación: Café de Campeones</h3>
@@ -152,11 +157,11 @@ const Eventos = () => {
 
                     <article className="event-item confort-item">
                         <img
-                            src="src/assets/noche de pelis.jpg"
+                            src={pelisImg}
                             alt="Noche UFC"
                             className="event-img cursor-zoom"
                             loading="lazy"
-                            onClick={() => openModal("src/assets/noche de pelis.jpg")}
+                            onClick={() => openModal(pelisImg)}
                         />
                         <div className="event-desc">
                             <h3>Noche de Películas & UFC</h3>
