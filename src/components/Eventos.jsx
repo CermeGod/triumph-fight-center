@@ -1,8 +1,13 @@
 import './Eventos.css';
 import { useState, useRef } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import imgEstelar from '../assets/evento-pelea-estelar.jpeg';
-import imgEntrada from '../assets/evento-separada-entrada-peru.jpeg';
+import imgEstelar from '../assets/evento-pelea-estelar.webp';
+import imgEntrada from '../assets/evento-separada-entrada-peru.webp';
+import armaskargasImg from '../assets/pelea-evento-A.Armas vs K.Vargas.webp';
+import liviameyagusukiImg from '../assets/Pelea-E.LIVIA VS H.MIUAGSUKI.webp';
+import cafeImg from '../assets/invitacion a los estudiantes a cafe - colaboracion.webp';
+import pelisImg from '../assets/noche de pelis.webp';
+
 const Eventos = () => {
     const [modalImage, setModalImage] = useState(null);
     const eventsGridRef = useRef(null);
@@ -74,6 +79,7 @@ const Eventos = () => {
                             alt="O.Medrano VS J.Muñante"
                             className="event-img cursor-zoom"
                             loading="lazy"
+                            width="500" height="700"
                             onClick={() => openModal(imgEstelar)}
                         />
                         <div className="event-desc text-center">
@@ -89,11 +95,12 @@ const Eventos = () => {
 
                     <article className="event-item">
                         <img
-                            src="src/assets/pelea-evento-A.Armas vs K.Vargas.jpg"
+                            src={armaskargasImg}
                             alt="Separada Entrada"
                             className="event-img cursor-zoom"
                             loading="lazy"
-                            onClick={() => openModal("src/assets/pelea-evento-A.Armas vs K.Vargas.jpg")}
+                            width="500" height="700"
+                            onClick={() => openModal(armaskargasImg)}
                         />
                         <div className="event-desc text-center">
                             <h3>A.Armas VS K.Vargas</h3>
@@ -107,11 +114,12 @@ const Eventos = () => {
                     </article>
                     <article className="event-item">
                         <img
-                            src="src/assets/Pelea-E.LIVIA VS H.MIUAGSUKI.png"
+                            src={liviameyagusukiImg}
                             alt="Plantilla Evento"
                             className="event-img cursor-zoom"
                             loading="lazy"
-                            onClick={() => openModal("src/assets/Pelea-E.LIVIA VS H.MIUAGSUKI.png")}
+                            width="500" height="700"
+                            onClick={() => openModal(liviameyagusukiImg)}
                         />
                         <div className="event-desc text-center">
                             <h3>E.Livia VS H.Miyagusuku</h3>
@@ -138,11 +146,12 @@ const Eventos = () => {
                 <div className="events-grid" ref={chillGridRef}>
                     <article className="event-item confort-item">
                         <img
-                            src="src/assets/invitacion a los estudiantes a cafe - colaboracion.jpeg"
+                            src={cafeImg}
                             alt="Cafetería"
                             className="event-img cursor-zoom"
                             loading="lazy"
-                            onClick={() => openModal("src/assets/invitacion a los estudiantes a cafe - colaboracion.jpeg")}
+                            width="600" height="400"
+                            onClick={() => openModal(cafeImg)}
                         />
                         <div className="event-desc">
                             <h3>Invitación: Café de Campeones</h3>
@@ -152,11 +161,12 @@ const Eventos = () => {
 
                     <article className="event-item confort-item">
                         <img
-                            src="src/assets/noche de pelis.jpg"
+                            src={pelisImg}
                             alt="Noche UFC"
                             className="event-img cursor-zoom"
                             loading="lazy"
-                            onClick={() => openModal("src/assets/noche de pelis.jpg")}
+                            width="600" height="400"
+                            onClick={() => openModal(pelisImg)}
                         />
                         <div className="event-desc">
                             <h3>Noche de Películas & UFC</h3>

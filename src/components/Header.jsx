@@ -1,9 +1,9 @@
 import './Header.css';
 import { useState, useEffect } from 'react';
 import { Settings, Moon, Sun, Monitor, EyeOff } from 'lucide-react';
-import logo from '../assets/Superlogo.png';
+import logo from '../assets/Superlogo.webp';
 import logoUnico from '../assets/Logo-Unico-header-footer-favicon.webp';
-import faviconImg from '../assets/favicon.png';
+import faviconImg from '../assets/favicon.webp';
 
 const Header = () => {
     const [settingsOpen, setSettingsOpen] = useState(false);
@@ -34,8 +34,8 @@ const Header = () => {
             <div className="container header-inner">
                 {/* 1. Izquierda: Logo */}
                 <a href="/" className="logo-placeholder">
-                    <img src={logo} alt="Triumph Fight Center Logo" className="logo-img default-only" />
-                    <img src={logoUnico} alt="Triumph Unico Logo" className="logo-img unico-only" />
+                    <img src={logo} alt="Triumph Fight Center Logo" className="logo-img default-only" width="200" height="70" loading="eager" fetchPriority="high" />
+                    <img src={logoUnico} alt="Triumph Unico Logo" className="logo-img unico-only" width="150" height="60" loading="lazy" />
                 </a>
 
                 <nav className="nav">

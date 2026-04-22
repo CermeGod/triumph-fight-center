@@ -1,5 +1,7 @@
 import './Profesor.css';
 import { Instagram, Facebook } from 'lucide-react';
+import joelImg1 from '../assets/profesor-joel-imagen1.webp';
+import joelImg2 from '../assets/Profeso-Joel-imagen2.webp';
 
 const Profesor = () => {
     return (
@@ -8,14 +10,16 @@ const Profesor = () => {
                 <div className="profesor-card">
                     <div className="profesor-img-side has-crossfade">
                         <img
-                            src="src/assets/profesor-joel-imagen1.jpg"
+                            src={joelImg1}
                             alt="Profesor Principal Triumph Fight Center"
                             className="profesor-img base-img"
+                            width="400" height="500" loading="lazy"
                         />
                         <img
-                            src="src/assets/Profeso-Joel-imagen2.png"
+                            src={joelImg2}
                             alt="Profesor Principal Triumph Fight Center Accion"
                             className="profesor-img crossfade-img"
+                            width="400" height="500" loading="lazy"
                         />
                     </div>
                     <div className="profesor-text-side">
@@ -31,7 +35,7 @@ const Profesor = () => {
                             "Transmitiendo conocimiento con pasión, integridad y un nivel técnico impecable para forjar la mente de cada guerrero."
                         </p>
                         <div className="profesor-socials" style={{ display: 'flex', gap: '20px', marginTop: '20px', paddingLeft: '15px' }}>
-                            <a href="#" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)' }}>
+                            <a href="#" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)' }} aria-label="Instagram de Joel">
                                 <Instagram size={24} />
                             </a>
                         </div>

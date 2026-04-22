@@ -5,7 +5,7 @@ import Classes from '../components/Classes';
 import Gloria from '../components/Gloria';
 import Eventos from '../components/Eventos';
 import Profesor from '../components/Profesor';
-import Plans from '../components/Plans';
+// [TEMP DISABLED] import Plans from '../components/Plans';
 import Footer from '../components/Footer';
 import Banner from '../components/Banner';
 import WhatsAppBtn from '../components/WhatsAppBtn';
@@ -52,7 +52,7 @@ function Home() {
                 <Gloria />
                 <Eventos />
                 <Profesor />
-                <Plans />
+                {/* <Plans /> */}{/* SECCIÓN PRECIOS TEMPORALMENTE DESHABILITADA */}
             </main>
             <Footer />
             <WhatsAppBtn />

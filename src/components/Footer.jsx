@@ -1,6 +1,6 @@
 import './Footer.css';
 import { Instagram, Facebook, Share2, MapPin, Phone } from 'lucide-react';
-import logo from '../assets/Superlogo.png';
+import logo from '../assets/Superlogo.webp';
 import logoUnico from '../assets/Logo-Unico-header-footer-favicon.webp';
 const Footer = () => {
     return (
@@ -8,8 +8,8 @@ const Footer = () => {
             <div className="container footer-inner">
                 <div className="footer-info">
                     <a href="/">
-                        <img src={logo} alt="Triumph Fight Center Footer Logo" className="footer-logo-img default-only" />
-                        <img src={logoUnico} alt="Triumph Fight Center Footer Logo" className="footer-logo-img unico-only" />
+                        <img src={logo} alt="Triumph Fight Center Footer Logo" className="footer-logo-img default-only" width="200" height="70" loading="lazy" />
+                        <img src={logoUnico} alt="Triumph Fight Center Footer Logo" className="footer-logo-img unico-only" width="150" height="60" loading="lazy" />
                     </a>
                 </div>
 
